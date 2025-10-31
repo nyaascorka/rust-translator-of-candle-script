@@ -1,7 +1,2 @@
 candle
-    counter = 0
-    while counter < 5
-        print "Счётчик:", counter
-        add counter 1
-    end
 end

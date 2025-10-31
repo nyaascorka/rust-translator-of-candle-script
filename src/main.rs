@@ -4,11 +4,10 @@ use iscrolib::candle_script::{
 };
 
 fn main() {
-    // READ FILE AS Vec<char> (UTF_32!)
+    // READ FILE AS Vec<char> (UTF-32!)
     let source_path = std::env::args().nth(1).unwrap_or_else(|| {
-        // eprintln!("Please specify the path. - Dmitriy & Iscra (^_^)");
-        // std::process::exit(-1);
-        "candle-script-samples/index.cdl".to_string()
+        eprintln!("Please specify the path. - Dmitriy & Iscra (^_^)");
+        std::process::exit(-1);
     });
     let candle_source = std::fs::read_to_string(
         source_path

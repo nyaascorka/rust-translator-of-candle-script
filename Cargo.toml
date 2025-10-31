@@ -1,0 +1,9 @@
+[package]
+name = "candle-script-translator"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+lazy_static = "1.5.0"
+
+iscrolib = { path = "iscrolib" }
